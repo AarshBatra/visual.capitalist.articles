@@ -50,9 +50,174 @@ library(geofacet)
 library(pak)
 library(camcorder)
 library(ggbeeswarm)
+library(ggtext)
+library(ggimage)
+library(tidyverse)
+library(ggbeeswarm)
+library(cowplot)
+library(ggtext)
+library(scales)
+library(grid)
+library(png)
+library(here)
+library(ggimage)
+library(showtext)
 
 # Negation of the "%in%" operator function
 `%notin%` <- Negate(`%in%`)
+
+
+```
+
+## Story 2: Objects launched in Space, tidy tuesday dataset (Voronoi app submission)
+
+```{r}
+#### Read directly from GitHub and clean column names
+outer_space_objects <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-04-23/outer_space_objects.csv')
+
+outer_space_objects <- outer_space_objects %>% 
+  clean_names() %>%
+  mutate_if(is.character, tolower)
+
+
+#### group data into decades--------------
+outer_space_objects <- outer_space_objects %>%
+  mutate(decade = paste0(floor(year / 10) * 10, "-", floor(year / 10) * 10 + 10)) %>%
+  arrange(year) %>%
+  filter(entity != "world")
+
+
+#### calculate the total number of objects sent in space by each entity in each decade
+outer_space_objects_summary <- outer_space_objects %>%
+  group_by(entity, decade) %>%
+  summarise(num_objects = sum(num_objects, na.rm = TRUE)) %>%
+  ungroup() %>%
+  arrange(entity, decade, num_objects) %>%
+  mutate(entity = str_to_title(entity)) 
+
+# #### outer space objects summary with chat GPT filled continents
+# outer_space_objects_summary <- readxl::read_xlsx("./data/intermediate/obj_launched_in_outer_space/outer_space_objects_summary_with_continents.xlsx")
+
+
+#### Add a continent column
+
+
+
+#### Plot the number of unique entities that sent objects into space in each decade
+
+# Load rocket image (replace with the path to your rocket image)
+rocket_img <- grid::rasterGrob(png::readPNG(paste0(here(), "/images/thin_rocket_bg_rm_adobe.png")), width = unit(1, "npc"), height = unit(1, "npc"))
+satellite_img <- png::readPNG(paste0(here(), "/images/tiny_satellite.png"))
+background_img <- grid::rasterGrob(readPNG(paste0(here(), "/images/starry_night_2_png.png")), width = unit(1, "npc"), height = unit(1, "npc"))
+
+# Create the plot
+plt <- outer_space_objects_summary %>%
+  ggplot() +
+    # annotation_custom(background_img, ymin = -Inf, ymax = Inf, xmin = -Inf, xmax = Inf) +
+  
+  # Main plot with geom_quasirandom, using deep space colors
+  geom_quasirandom(mapping = aes(x = num_objects, y = decade, size = num_objects, alpha = num_objects),
+                   groupOnX = FALSE, width = 0.4, color = "cyan") + 
+  scale_size(range = c(2.7, 15), breaks = c(1, 10, 100, 1000, 5000)) +
+  scale_y_discrete(expand = expansion(mult = c(0.1, 0.1))) + 
+  scale_alpha_continuous(range = c(0.25, 0.8), breaks = c(1, 10, 100, 1000, 5000)) +
+  
+  # # Highlighting Russia and USA with elegant space-themed colors
+#   geom_point(data = filter(outer_space_objects_summary, num_objects > 300),
+#              aes(x = num_objects, y = decade, size= num_objects, color = entity)) +
+# scale_colour_paletteer_d("dichromat::Categorical_12") +
+  
+ # Labels for high object counts > 1000
+  geom_text(data = filter(outer_space_objects_summary, num_objects > 800),
+            aes(x = num_objects, y = decade, label = paste(entity)),
+            hjust = 0.5, vjust = -1.2, size = 3.5, color = "white") +
+  
+  #  # Labels for high object counts
+  geom_text(data = filter(outer_space_objects_summary, num_objects > 100, num_objects < 1000, decade %in% c("1950-1960", "1960-1970", "1970-1980", "1980-1990")),
+            aes(x = num_objects, y = decade, label = paste(entity)),
+            hjust = 0.5, vjust = -1.2, size = 3.5, color = "white") +
+  # 
+    geom_text(data = filter(outer_space_objects_summary, num_objects < 100, decade %in% c("1950-1960")),
+            aes(x = num_objects, y = decade, label = paste(entity)),
+            hjust = 0.5, vjust = -1.2, size = 3.5, color = "white") +
+  
+      geom_text(data = filter(outer_space_objects_summary, num_objects > 100, decade %in% c("2000-2010", "2010-2020", "2020-2030")),
+            aes(x = num_objects, y = decade, label = paste(entity)),
+            hjust = 0.5, vjust = -1.2, size = 3.5, color = "white") +
+  
+       geom_text(data = filter(outer_space_objects_summary, decade %in% c("1960-1970"), num_objects > 8),
+            aes(x = num_objects, y = decade, label = paste(entity)),
+            hjust = 0.5, vjust = -1.2, size = 3.5, color = "white") +
+  
+ ggplot2::annotate(
+    "text", label = "Japan, France",
+    x = 23 , y = "1970-1980" , size = 3.5, colour = "white"
+  ) +
+  
+           geom_text(data = filter(outer_space_objects_summary, num_objects > 25, num_objects < 100, decade %in% c("1980-1990")),
+            aes(x = num_objects, y = decade, label = paste(entity)),
+            hjust = 0.5, vjust = -1.2, size = 3.5, color = "white") +
+  
+   ggplot2::annotate(
+    "text", label = "US, Russia",
+    x = 650 , y = "1990-2000" , size = 3.5, colour = "white"
+  ) +
+  
+             geom_text(data = filter(outer_space_objects_summary, num_objects > 60, num_objects <= 150, decade %in% c("2000-2010")),
+            aes(x = num_objects, y = decade, label = paste(entity)),
+            hjust = 0.5, vjust = -1.2, size = 3.5, color = "white") +
+  
+             geom_text(data = filter(outer_space_objects_summary, num_objects > 30, num_objects < 100, decade %in% c("1990-2000")),
+            aes(x = num_objects, y = decade, label = paste(entity)),
+            hjust = 0.5, vjust = -1.2, size = 3.5, color = "white") +
+  
+  
+  
+    # Log scale for y-axis
+  scale_x_log10(breaks = c(1, 10, 100, 1000, 10000), limits = c(1, 10000)) +
+  
+     # geom_image(aes(x = num_objects, y = decade, image = paste0(here(), "/images/tiny_satellite.png")),
+     #        size = 0.05,  # Adjust size of the satellite image
+     #        position = position_quasirandom(width = 0.1)) +
+  
+  # Apply a dark space-themed background with stars as minor gridlines
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "none",
+        legend.text = element_text(color = "white", family = "Audiowide"),
+        plot.background = element_rect(fill = "#001f3f", color = NA),  # Deep space color
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        legend.title = element_blank()) +  # Add space for the rocket image
+  
+  # Add rocket image along the y-axis (adjust width/height and coordinates)
+  annotation_custom(rocket_img,
+                    ymin = -0.5, ymax = 1.3, xmin = -Inf, xmax = Inf) +
+
+  # Title and subtitle with space-related theme
+  labs(title = "**Number of Objects  launched  into  Space by Decade**",
+       subtitle = "A cosmic view  of  space &nbsp; launches &nbsp; across &nbsp; the &nbsp; world",
+       y = "Decade", 
+       x = "Number of Objects Launched", 
+       color = "", 
+       caption = expression("Data Source · UNOOSA | Data Processed · Our World in Data | Graphic · github.com/AarshBatra")) +
+  
+  theme(
+    plot.title = element_markdown(family = "Audiowide", size = 24, face = "bold", color = "#FFB300", hjust = 0),
+    plot.subtitle = element_markdown(family = "Audiowide", size = 16, color = "white", hjust = 0, 
+                                     margin = margin(b = 1, unit = "cm")),
+    axis.text = element_text(family = "Audiowide", size = 12, color = "white", face = "bold"),
+    axis.title.x = element_text(family = "Audiowide", size = 14, face = "bold", color = "white", margin = margin(b = 1, t = 0.5, unit = "cm")),
+    axis.title.y = element_text(family = "Audiowide", size = 14, face = "bold", color = "white", margin = margin(l = 0.5, r = 0.5, unit = "cm")),
+    axis.line.x = element_blank(), 
+    axis.line.y = element_blank(), 
+    legend.box.background = element_rect(fill = NA,  color = "white", size = 0.3),
+    plot.caption = element_text(family = "Audiowide", size = 9, hjust = 0.5, color = "white", margin = margin(b = 0.2, unit = "cm"))
+  ) +
+  coord_flip() 
+
+plt1 <- ggbackground(plt, "./images/starry_night_3_png.png")
+
+ggsave("plot.png", plot = plt1, width = 1000, height = 900, units = "px")
 
 
 ```
@@ -329,4 +494,183 @@ ggsave(paste0(here(), "/output/pm2.5_compared_to_other_threats_vis_cap.png"), pm
 ggsave(paste0(here(), "/[upd]pm2.5_compared_to_other_threats_vis_cap.png"), pm2.5_comparison_oth_threats_plt, width = 10, height = 8, dpi = 320, scale = 2)
 
 ```
+
+
+
+## [TESTING - NOT READY YET] Story other (1): Rural Accesibility Index
+
+```{r}
+
+#### read and clean the data files=====================================================================
+
+#> Define the target projection (Equal Earth - EPSG:8857)
+equal_earth_proj <- "+proj=eqearth +datum=WGS84 +wktext"
+
+#> read in country continent mapping, clean col names and convert all character cols to lowercase
+country_continent <- read_csv("./data/raw/country_continent.csv")
+country_continent$country <- str_to_lower(country_continent$country)
+country_continent$continent <- str_to_lower(country_continent$continent)
+country_continent <- country_continent %>%
+  clean_names()
+
+
+#> subnational RAI read and clean-------------------------------------------------------
+rai_subnational_shp_raw <- st_read("./data/raw/sdgi-9-1-1-rai-2023-shp/sdgi_9_1_1_rai_2023_subnational.shp")
+rai_subnational_shp_raw <- st_transform(rai_subnational_shp_raw, equal_earth_proj)
+rai_subnational_shp_raw <- rai_subnational_shp_raw %>%
+  clean_names() %>%
+  mutate_if(is.character, tolower) %>%
+  rename(country = name_0, 
+         state = name_1, 
+         district = name_2) %>%
+  select(-c(shape_area, shape_leng))
+
+#> add continent info and add buckets for RAI
+rai_subnational_shp_raw_cont <- rai_subnational_shp_raw %>%
+  left_join(country_continent, by = "country") %>%
+  mutate(continent = ifelse(country %in% c("republic of congo"), "africa", continent)) 
+
+#> add sdg911pct buckets
+rai_subnational_shp_raw_cont_sdg_buckets <- rai_subnational_shp_raw_cont %>%
+  mutate(sdg911pct_bucket = ifelse(sdg911pct < 0, "Data not available", NA),
+         sdg911pct_bucket = ifelse(sdg911pct >= 0 & sdg911pct < 25, "0 to < 25", sdg911pct_bucket), 
+         sdg911pct_bucket = ifelse(sdg911pct >= 25 & sdg911pct < 50, "25 to < 50", sdg911pct_bucket), 
+         sdg911pct_bucket = ifelse(sdg911pct >= 50 & sdg911pct < 75, "50 to < 75", sdg911pct_bucket), 
+         sdg911pct_bucket = ifelse(sdg911pct >= 75, ">= 75", sdg911pct_bucket)) %>%
+  mutate(sdg911pct_bucket_order = ifelse(sdg911pct_bucket == "0 to < 25", 1, NA), 
+         sdg911pct_bucket_order = ifelse(sdg911pct_bucket == "25 to < 50", 2, sdg911pct_bucket_order), 
+         sdg911pct_bucket_order = ifelse(sdg911pct_bucket == "50 to < 75", 3, sdg911pct_bucket_order), 
+         sdg911pct_bucket_order = ifelse(sdg911pct_bucket == ">= 75", 4, sdg911pct_bucket_order), 
+         sdg911pct_bucket_order = ifelse(sdg911pct_bucket == "Data not available", 5, sdg911pct_bucket_order)) %>%
+  mutate(pol_area_sq_met = as.numeric(st_area(geometry))) %>%
+  filter(pol_area_sq_met >= 10000000) %>%
+  select(-geometry, geometry)
+
+
+#> national RAI-----------------------------------------------------------
+rai_national_shp_raw <- st_read("./data/raw/sdgi-9-1-1-rai-2023-shp/sdgi_9_1_1_rai_2023_national.shp")
+
+#> transform CRS and clean column names, convert everything to lowercase
+rai_national_shp_raw <- st_transform(rai_national_shp_raw, equal_earth_proj)
+rai_national_shp_raw <- rai_national_shp_raw %>%
+  clean_names() %>%
+    mutate_if(is.character, tolower) %>%
+    rename(country = name_0) %>%
+  select(-c(shape_area, shape_leng))
+
+#> add continent information
+rai_national_shp_raw_cont <- rai_national_shp_raw %>%
+  left_join(country_continent, by = c("country")) %>%
+    mutate(pol_area_sq_met = as.numeric(st_area(geometry))) %>%
+  filter(pol_area_sq_met >= 10000000) %>%
+   select(-geometry, geometry)
+
+#### Plots=========================================================================================
+
+
+#> plt 1 (ggridges)---------------------------------------
+
+ridges_plt_data_africa <- rai_subnational_shp_raw_cont_sdg_buckets %>%
+  st_drop_geometry() %>%
+  select(country, state, continent, district, sdg911pct) %>%
+  filter(sdg911pct >= 0, continent == "africa")
+
+ridges_plt_data_summary_countries_for_plt <-  ridges_plt_data_africa %>%
+  group_by(country) %>%
+  summarise(mean_sdg911pct = mean(sdg911pct, na.rm = TRUE)) %>%
+  slice_min(mean_sdg911pct, n = 10) %>%
+  select(country) %>%
+  unlist() %>%
+  as.vector()
+
+plt <- ridges_plt_data_africa %>%
+  filter(country %in% ridges_plt_data_summary_countries_for_plt) %>%
+  ggplot() +
+  ggridges::geom_density_ridges_gradient(mapping = aes(x = sdg911pct, y = country, fill = stat(x))) +
+  scale_fill_viridis(option = "cividis", direction = -1) +
+  scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0, 100)) +
+  theme_clean()
+
+
+
+
+
+
+#### plt2: plot subnational plot------------------------------------------
+
+gg_record(dir = "tidytuesday-temp2", device = "png", width = 8.44, height = 10.5, units = "in", dpi = 320, scale = 4)
+
+gg_resize_film(
+  height = 4,
+  width = 4,
+  units = "in",
+  dpi = 320
+)
+
+# # Custom color palette with pomological colors
+# palette <- c("#7b8f4e", "#adc178","#dde5b6","#A88469","#8A6950","#6c584c")
+# palette <- c("#7b8f4e", "#adc178","#dde5b6","lavenderblush2", "lavenderblush3", "lavenderblush4")
+# palette <- c("#6c584c", "#8A6950", "#A88469", "gray75", "gray45", "gray25")
+# palette <- c("#7b8f4e", "#adc178","#dde5b6","honeydew4", "honeydew3", "honeydew4")
+# palette <- c("#565d50", "#616853", "#6c725b", "#777e62", "#82886a", "#8d9171", "#adc178","#dde5b6")
+# palette <-  c("#6b452b", "#a89985", "#efe1c6", "#f8eed1", "#fffeea")
+# palette <- c("#e7efc5","#bfd7b5","#a3c4bc","#7B9E91","#3a606e")
+# plt1: subnational map-------------------
+
+# Convert sdg911pct to numeric if it's not already
+# rai_subnational_shp_raw$sdg911pct <- as.numeric(as.character(rai_subnational_shp_raw$sdg911pct))
+# rai_subnational_shp_raw <- rai_subnational_shp_raw %>%
+#   mutate(sdg911pct = ifelse(is.na(sdg911pct)))
+
+# read background image
+vil_near_highway_img <- png::readPNG("./vil_near_highway_dalle2_6.png")
+
+custom_paragraph <- "<p style='font-family: Arial, sans-serif; font-size: 12px; color: #666666;'>This plot visualizes the Rural Accessibility Index for countries in Africa. The colors represent different accessibility levels, ranging from low to high.</p>"
+
+
+# plt 1 (map)
+rai_subnational_shp_raw_cont_sdg_buckets %>%
+  filter(continent == "africa") %>%
+ ggplot() +
+  # background_image(vil_near_highway_img) +
+   geom_sf(mapping = aes(fill = forcats::fct_reorder(sdg911pct_bucket, sdg911pct_bucket_order)), color = "transparent", lwd = 0.02) +
+  geom_sf(data = rai_national_shp_raw_cont %>% filter(continent == "africa") %>% select(country, geometry), fill = "transparent", color = "black", lwd = 0.1) +
+    geom_sf(data = rai_national_shp_raw_cont %>% filter(continent == "africa", country %in% ridges_plt_data_summary_countries_for_plt) %>% select(country, geometry), fill = "transparent", color = "black", lwd = 0.4) +
+  scale_fill_viridis(discrete = TRUE, option = "magma", direction = -1) +
+  
+  
+  # scale_fill_manual(values = c("0 to < 25" = "#c3bd89",
+  #                              "25 to < 50" = "#bdae6a",
+  #                              "50 to < 75" = "#928877",
+  #                              ">= 75" = "#6a7ba0",
+  #                              "Data not available" = "lightgrey")) +
+ # scale_fill_gradientn(colors = palette, breaks = seq(0, 100, 20), minor_breaks = seq(10, 90, 20)) + 
+  # scale_fill_viridis(discrete = TRUE, direction = -1, option = "E") +
+  labs(fill = "", title = "Rural Accessibility Index (RAI) in Africa", 
+       subtitle = "Proportion of the rural population living within 2 km of an all-season road. <br> <span style='color: #FFEA46FF'><b>Less than 25%</b></span>, <span style='color: #CBBA69FF'><b>25% to 50%</b></span>, <span style='color: #958F78FF'><b>50% to 75%</b></span>, <span style='color: #31446BFF'><b>75% and above</b></span>") +
+  theme_map() +
+  theme(
+    legend.position = "none",  
+    plot.background = element_rect(fill = "#aba7cd", color = "#aba7cd"), 
+    plot.title = element_markdown(family = "Mono", size = 10), 
+    plot.subtitle = element_markdown(family = "Arial", size = 8)
+  ) +
+ coord_sf(crs = "+proj=eqearth +datum=WGS84 +wktext")
+
+# +
+#   guides(fill = guide_legend(
+#     keywidth = unit(1, "lines"),  # Adjust key width
+#     keyheight = unit(1, "lines"),  # Adjust key height
+#     label.position = "bottom",  # Position labels below keys
+#     label.hjust = 0.5,  # Center labels horizontally
+#     label.vjust = 1,  # Adjust vertical positioning of labels
+#     nrow = 1, 
+#     shape = guide_legend(override.aes = list(shape = 19))
+#   )) 
+  
+
+ggsave("./test.png", plt, width = 7, height = 7, units = "in", limitsize = FALSE, dpi = 520)
+
+```
+
 
