@@ -5,7 +5,7 @@ Angola,-0.2,More Moving Out
 Anguilla,10.3,More Moving In
 Albania,-3.2,More Moving Out
 Aland,NA,NA
-Andorra,0,No Net Change
+Andorra,0,No Net Movement
 United Arab Emirates,-3.1,More Moving Out
 Argentina,-0.1,More Moving Out
 Armenia,-5.2,More Moving Out
@@ -34,7 +34,7 @@ Bolivia,-1,More Moving Out
 Brazil,-0.2,More Moving Out
 Barbados,-0.3,More Moving Out
 Brunei,2.1,More Moving In
-Bhutan,0,No Net Change
+Bhutan,0,No Net Movement
 Botswana,2.7,More Moving In
 Central African Republic,-3.1,More Moving Out
 Canada,5.3,More Moving In
@@ -72,15 +72,15 @@ Finland,2.2,More Moving In
 Fiji,-5.5,More Moving Out
 Falkland Islands,NA,NA
 France,1.1,More Moving In
-Faroe Islands,0,No Net Change
+Faroe Islands,0,No Net Movement
 Federated States of Micronesia,-21,More Moving Out
 Gabon,3.5,More Moving In
 United Kingdom,2.9,More Moving In
 Georgia,-3.8,More Moving Out
 Guernsey,1.6,More Moving In
 Ghana,-0.2,More Moving Out
-Guinea,0,No Net Change
-Gambia,0,No Net Change
+Guinea,0,No Net Movement
+Gambia,0,No Net Movement
 Guinea Bissau,-3.5,More Moving Out
 Equatorial Guinea,12.1,More Moving In
 Greece,1.1,More Moving In
@@ -92,7 +92,7 @@ Guyana,-6.6,More Moving Out
 Hong Kong S.A.R.,1.6,More Moving In
 Heard Island and McDonald Islands,NA,NA
 Honduras,-1.7,More Moving Out
-Croatia,0,No Net Change
+Croatia,0,No Net Movement
 Haiti,-1.6,More Moving Out
 Hungary,2.5,More Moving In
 Indonesia,-0.7,More Moving Out
@@ -102,7 +102,7 @@ Indian Ocean Territories,NA,NA
 British Indian Ocean Territory,NA,NA
 Ireland,5.6,More Moving In
 Iran,-0.3,More Moving Out
-Iraq,0,No Net Change
+Iraq,0,No Net Movement
 Iceland,2.5,More Moving In
 Israel,1.9,More Moving In
 Italy,3.4,More Moving In
@@ -135,8 +135,8 @@ Macao S.A.R,3.1,More Moving In
 Saint Martin,-6.2,More Moving Out
 Morocco,-1.7,More Moving Out
 Monaco,11.7,More Moving In
-Moldova,0,No Net Change
-Madagascar,0,No Net Change
+Moldova,0,No Net Movement
+Madagascar,0,No Net Movement
 Maldives,-12.8,More Moving Out
 Mexico,-0.7,More Moving Out
 Marshall Islands,-4.3,More Moving Out
@@ -149,11 +149,11 @@ Mongolia,-0.8,More Moving Out
 Northern Mariana Islands,-13.4,More Moving Out
 Mozambique,-1.5,More Moving Out
 Mauritania,-0.7,More Moving Out
-Montserrat,0,No Net Change
-Mauritius,0,No Net Change
-Malawi,0,No Net Change
+Montserrat,0,No Net Movement
+Mauritius,0,No Net Movement
+Malawi,0,No Net Movement
 Malaysia,1.5,More Moving In
-Namibia,0,No Net Change
+Namibia,0,No Net Movement
 New Caledonia,3.6,More Moving In
 Niger,-0.6,More Moving Out
 Norfolk Island,NA,NA
@@ -172,10 +172,10 @@ Pitcairn Islands,NA,NA
 Peru,-1,More Moving Out
 Philippines,-0.2,More Moving Out
 Palau,0.7,More Moving In
-Papua New Guinea,0,No Net Change
+Papua New Guinea,0,No Net Movement
 Poland,-6.2,More Moving Out
 Puerto Rico,-9.6,More Moving Out
-North Korea,0,No Net Change
+North Korea,0,No Net Movement
 Portugal,1.5,More Moving In
 Paraguay,-0.1,More Moving Out
 Palestine,NA,NA
@@ -191,7 +191,7 @@ South Sudan,19.1,More Moving In
 Senegal,-0.7,More Moving Out
 Singapore,4.2,More Moving In
 South Georgia and South Sandwich Islands,NA,NA
-Saint Helena,0,No Net Change
+Saint Helena,0,No Net Movement
 Solomon Islands,-1.5,More Moving Out
 Sierra Leone,1.4,More Moving In
 El Salvador,-7.7,More Moving Out
@@ -199,7 +199,7 @@ San Marino,5.6,More Moving In
 Somaliland,NA,NA
 Somalia,-0.7,More Moving Out
 Saint Pierre and Miquelon,-6.8,More Moving Out
-Republic of Serbia,0,No Net Change
+Republic of Serbia,0,No Net Movement
 Sao Tome and Principe,-6.5,More Moving Out
 Suriname,2.5,More Moving In
 Slovakia,0.4,More Moving In
