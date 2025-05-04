@@ -1,0 +1,3 @@
+Apart for data for this plot, a link to my original project on my air pollution blog post is pasted below. Here you will find India Block Level Monthly Average Population Weighted PM2.5 data for all Indian blocks for each year from 1998 to 2023. The data is available in both wide and long formats. Read more on biteSizedAQ here: 
+
+https://github.com/AarshBatra/biteSizedAQ/tree/main/15.ind.block.mth.pm2.5.sat.data.processing.1998.2023

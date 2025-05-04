@@ -34,6 +34,16 @@ Voronoi and Visual Capitalist Creator’s Program.
 
 ------------------------------------------------------------------------
 
+## Project 07: NCT of Delhi Blocks Monthly Population Weighted Average PM2.5 from 1998 to 2023
+
+- Link to [resources for this
+  project](https://github.com/AarshBatra/visual.capitalist.articles/tree/main/6.open.aq.2024.rep.country.wise.aq.status.map)
+  (data, data dictionary, plot, etc).
+
+- Code: Link to [Master
+  Rmd](https://github.com/AarshBatra/visual.capitalist.articles/blob/main/vis.cap.articles.Rmd)
+  (See Story 7 Chunk)
+
 ## Project 06: OpenAQ 2024 Report Country Wise AQ Monitoring Status Map
 
 - Link to [Published

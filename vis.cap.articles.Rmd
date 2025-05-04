@@ -89,11 +89,120 @@ ind_country_shp <- st_read(paste0(here(), "/4.ind.bl.lev.pol.dist/raw.data/india
 
 
 
+## Story 7: NCT of Delhi Blocks Monthly Population Weighted Average PM2.5 from 1998 to 2023
+
+```{r}
+
+
+delhi_monthly_blk_data_1998_2023 <- read_csv("./7.delhi.mthly.pm2.5.1998.2023/raw.data/raw_data.csv")
+
+#### Create Delhi Monthly PM2.5 snapshot for selected years b/w 1998 and 2023
+delhi_mth_pm2.5_plt <- delhi_monthly_blk_data_1998_2023 %>%
+  mutate(month = factor(month, levels = str_to_lower(month.name), labels = month.abb)) %>%
+  left_join(
+    ind_shr_subdist_shp %>%
+      dplyr::select(state_name, district_name, subdistrict_name, geom), 
+    by = c("state_name", "district_name", "subdistrict_name")
+  ) %>%
+  st_as_sf() %>%
+  ggplot() +
+  geom_sf(aes(fill = avg_pm2.5), color = NA) +
+  scale_fill_stepsn(
+    colors = rev(viridisLite::magma(7)),
+    breaks = c(0, 40, 80, 120, 200, 300),
+    limits = c(0, 300),
+    na.value = "white"
+  ) +
+  theme_map() +
+  labs(
+    fill = expression("Monthly Average" ~ PM[2.5] ~ "(μg/m³)"),
+    title = expression("Block-level Monthly Average" ~ PM[2.5] ~ "Pollution in NCT of Delhi Blocks"),
+    caption = expression("Graphic · Aarsh Batra | github.com/AarshBatra/biteSizedAQ")
+  ) +
+  theme(
+    legend.position = "bottom",
+    legend.justification = "center",
+    legend.direction = "horizontal",
+    legend.key.width = unit(3, "cm"),
+    legend.box.margin = margin(0, 0, 15, 0),
+    plot.background = element_rect(fill = "white", color = NA),
+    panel.background = element_rect(fill = "white", color = NA),
+    strip.background = element_blank(),
+    strip.text = element_text(size = 12, family = "Mono"),
+    plot.title = element_text(size = 16, family = "Mono", hjust = 0, margin = margin(t = 0.5, b = 0.5, unit = "cm")),
+    legend.title = element_text(size = 14, family = "Mono", margin = margin(t = 0.2, b = 0.1, unit = "cm")),
+    legend.text = element_text(size = 12, family = "Mono"),
+    plot.caption = element_text(size = 9, family = "Mono", margin = margin(t = 0.8, unit = "cm"), hjust = 0.5), 
+    plot.margin = margin(l = 0.5, r = 0.5, unit = "cm")
+  ) +
+  guides(fill = guide_colorbar(title.position = "top", title.hjust = 0.5)) +
+  facet_grid(year ~ month, switch = "y")   
+
+
+#### addional calculations code[not for main plot, but for blog]-----------------------
+
+### annual average pop weighted
+summary_data <- delhi_monthly_blk_data_1998_2023 %>% 
+  group_by(year, subdistrict_name) %>% 
+  summarise(mean_pm2.5 = mean(avg_pm2.5, na.rm = TRUE), pop_blk = subdistrict_population[1]) %>%
+  ungroup() %>%
+  group_by(year) %>%
+  mutate(pop_wt = pop_blk/sum(pop_blk, na.rm = TRUE), 
+         tot_pop = sum(pop_blk, na.rm = TRUE), 
+         pop_wt_pm2.5 = mean_pm2.5*pop_wt) %>%
+  summarise(avg_pm2.5_fin = sum(pop_wt_pm2.5, na.rm = TRUE))
+
+### summer months average
+summary_data <- delhi_monthly_blk_data_1998_2023 %>% 
+  filter(month %in% c("march", "april", "may", "june", "july", "august", "september")) %>%
+  group_by(year, subdistrict_name) %>% 
+  summarise(mean_pm2.5 = mean(avg_pm2.5, na.rm = TRUE), pop_blk = subdistrict_population[1]) %>%
+  ungroup() %>%
+  group_by(year) %>%
+  mutate(pop_wt = pop_blk/sum(pop_blk, na.rm = TRUE), 
+         tot_pop = sum(pop_blk, na.rm = TRUE), 
+         pop_wt_pm2.5 = mean_pm2.5*pop_wt) %>%
+  summarise(avg_pm2.5_fin = sum(pop_wt_pm2.5, na.rm = TRUE))
+  
+
+### winter months average
+summary_data <- delhi_monthly_blk_data_1998_2023 %>% 
+  filter(month %in% c("october", "november", "december", "january", "february")) %>%
+  group_by(year, subdistrict_name) %>% 
+  summarise(mean_pm2.5 = mean(avg_pm2.5, na.rm = TRUE), pop_blk = subdistrict_population[1]) %>%
+  ungroup() %>%
+  group_by(year) %>%
+  mutate(pop_wt = pop_blk/sum(pop_blk, na.rm = TRUE), 
+         tot_pop = sum(pop_blk, na.rm = TRUE), 
+         pop_wt_pm2.5 = mean_pm2.5*pop_wt) %>%
+  summarise(avg_pm2.5_fin = sum(pop_wt_pm2.5, na.rm = TRUE))
+
+### months greater than 100 micrograms per cubice meter
+delhi_monthly_blk_data_1998_2023 %>%
+  filter(avg_pm2.5 > 180, year == 2023)
+
+ delhi_monthly_blk_data_1998_2023 %>%
+  filter(avg_pm2.5 > 120, year == 2023) %>%
+    select(month) %>%
+    unique()
+
+## 5 in 2023, 2 in 1998
+
+### months less than 35 micrograms per cubice meter
+  delhi_monthly_blk_data_1998_2023 %>%
+  filter(avg_pm2.5 < 35, year == 1998) %>%
+    select(month) %>%
+    unique()
+  
+## 0 in 2023, 4 in 1998
+
+```
+
 
 ## Story 6: OpenAQ Open Air Quality Data Global Landscape 2024 report, 4 category plot
-```{r}
+```{r story6}
 #### read data
-open_aq_gl_2024_data <- readxl::read_xlsx(paste0(here(), "/10.bite.sized.vis.3.openaq.gl.2024.report.summary/raw.data.xlsx"))
+open_aq_gl_2024_data <- readxl::read_xlsx(paste0(here(), "/6.open.aq.2024.rep.country.wise.aq.status.map/raw.data/raw.data.xlsz"))
 
 #### clean col names
 open_aq_gl_2024_data_clean <- open_aq_gl_2024_data %>%
@@ -258,9 +367,9 @@ plt1 <- ggbackground(plt, "./10.bite.sized.vis.3.openaq.gl.2024.report.summary/i
 
 ## Story 5: geofacet plot of India state level air pollution (1998-2022)
 
-```{r}
+```{r story5}
 #### load raw data
-ind_bl_lev_pol_wide <- read_csv(paste0(here(), "/4.ind.bl.lev.pol.dist/raw.data/ind_block_level_pop_weighted_pol_1998_2022.csv"))
+ind_bl_lev_pol_wide <- read_csv(paste0(here(), "/5.ind.st.lev.pol.timeseries/raw.data/ind_block_level_pop_weighted_pol_1998_2022.csv"))
 
 #### reshape and keep only year 2022
 ind_bl_lev_pol_long <- ind_bl_lev_pol_wide %>%
@@ -377,7 +486,7 @@ expression("Over 25 years from 1998 to 2022, not a single state or UT met the WH
 
 ## Story 4: choropleth categorical plot of India block level air pollution
 
-```{r}
+```{r story4}
 
 #### load raw data
 ind_bl_lev_pol_wide <- read_csv(paste0(here(), "/4.ind.bl.lev.pol.dist/raw.data/ind_block_level_pop_weighted_pol_1998_2022.csv"))
@@ -494,7 +603,7 @@ ggsave("./plt1.pdf", plt1, width = 16, height = 10, dpi = 320)
 
 ## Story 3: Net Migration Rate
 
-```{r}
+```{r story3}
 
 #### load only libraries of interest
 library(ggplot2)
@@ -641,7 +750,7 @@ plt1 <- ggimage::ggbackground(plt, "./3.net.migration.rate/images/beige_paper_gr
 
 ## Story 2: Objects launched in Space
 
-```{r}
+```{r story2}
 #### Read directly from GitHub and clean column names
 outer_space_objects <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-04-23/outer_space_objects.csv')
 
@@ -870,7 +979,7 @@ extrafont::embed_fonts("plt4.pdf")
 
 
 ## Story 1: Understanding the state of global air quality data, research and funding infrastructure
-```{r echo=TRUE, part1fig1}
+```{r story1}
 
 
 ### Part 1: How much longer can you live if you breathed clean air and how does it compare with other health threats? - Air Quality Life Index
