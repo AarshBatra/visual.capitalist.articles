@@ -1,0 +1,7 @@
+country: Name of the Country
+
+pollutant_count: Number of criteria pollutants (out of a max of 6) for which national AQ standards exist in the WHO 2025 AQ national standards database (for any averaging time, but only restricted to the averaging times studied and compiled under WHO)*
+
+
+----------
+* Note: This means that there could be countries that have standards for a given pollutant, but in a custom averaging time that is not captured by WHO. For e.g. US in this dataset has a count of 5 as for SO2 the "averaging time" used by the US does not align with WHO averaging times, hence it is not captured in this plot. Read the data story for more context.
