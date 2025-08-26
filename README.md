@@ -36,11 +36,22 @@ Voronoi and Visual Capitalist Creator’s Program.
 
 ## **Project 8: Air Quality Standards National Coverage for Criterial Pollutants Across the World**
 
+- Link to Published Story: \[coming\]
+
 - Link to raw WHO/Swiss TPH compiled national air quality standards
-  database: Link. Source:
+  database:
+  [Link](https://github.com/AarshBatra/visual.capitalist.articles/tree/main/8.who.nat.aq.st.database.2025/raw.data).
+  Source (Raw data):
   [Link](https://www.who.int/tools/air-quality-standards).
 
-- Link to resources for this project: Link
+- Link to data for plot:
+  [Link](https://github.com/AarshBatra/visual.capitalist.articles/tree/main/8.who.nat.aq.st.database.2025/final.data.for.plot).
+
+- Link to data for plot with shp file:
+  [Link](https://github.com/AarshBatra/visual.capitalist.articles/tree/main/8.who.nat.aq.st.database.2025/final.data.with.shp.for.plot).
+
+- Link to all resources for this project:
+  [Link](https://github.com/AarshBatra/visual.capitalist.articles/tree/main/8.who.nat.aq.st.database.2025)
 
 ## Project 06: OpenAQ 2024 Report Country Wise AQ Monitoring Status Map
 
