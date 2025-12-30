@@ -6,4 +6,4 @@
 
 # run plot script
 
-# get graph.
+# get graph
