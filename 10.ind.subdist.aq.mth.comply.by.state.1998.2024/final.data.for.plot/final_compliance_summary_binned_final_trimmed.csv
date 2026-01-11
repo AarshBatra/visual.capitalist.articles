@@ -1,0 +1,400 @@
+year,month,state_name,national_compliant,who_compliant,total_subdistricts,national_pct,who_pct,month_proper,month_name,national_text_color,who_text_color,compliance_bin_nat,compliance_bin_who
+1998,april,Andaman Nicobar Islands,9,0,9,100,0,April,Apr,white,black,80-100%,0-20%
+1998,april,Andhra Pradesh,1128,176,1128,100,15.602836879432624,April,Apr,white,black,80-100%,0-20%
+1998,april,Arunachal Pradesh,188,79,188,100,42.02127659574468,April,Apr,white,black,80-100%,40-60%
+1998,april,Assam,181,0,184,98.36956521739131,0,April,Apr,white,black,80-100%,0-20%
+1998,april,Bihar,32,0,534,5.992509363295881,0,April,Apr,black,black,0-20%,0-20%
+1998,april,Chandigarh,1,0,1,100,0,April,Apr,white,black,80-100%,0-20%
+1998,april,Chhattisgarh,149,14,149,100,9.395973154362416,April,Apr,white,black,80-100%,0-20%
+1998,april,Dadra Nagar Haveli,1,0,1,100,0,April,Apr,white,black,80-100%,0-20%
+1998,april,Daman Diu,2,0,2,100,0,April,Apr,white,black,80-100%,0-20%
+1998,april,Goa,11,0,11,100,0,April,Apr,white,black,80-100%,0-20%
+1998,april,Gujarat,193,0,226,85.39823008849558,0,April,Apr,white,black,80-100%,0-20%
+1998,april,Haryana,20,0,74,27.027027027027028,0,April,Apr,black,black,20-40%,0-20%
+1998,april,Himachal Pradesh,117,2,117,100,1.7094017094017095,April,Apr,white,black,80-100%,0-20%
+1998,april,Jammu Kashmir,83,6,83,100,7.228915662650602,April,Apr,white,black,80-100%,0-20%
+1998,april,Jharkhand,242,0,259,93.43629343629344,0,April,Apr,white,black,80-100%,0-20%
+1998,april,Karnataka,179,30,179,100,16.75977653631285,April,Apr,white,black,80-100%,0-20%
+1998,april,Kerala,63,26,63,100,41.269841269841265,April,Apr,white,black,80-100%,40-60%
+1998,april,Lakshadweep,9,0,9,100,0,April,Apr,white,black,80-100%,0-20%
+1998,april,Madhya Pradesh,333,31,342,97.36842105263158,9.064327485380117,April,Apr,white,black,80-100%,0-20%
+1998,april,Maharashtra,357,6,357,100,1.680672268907563,April,Apr,white,black,80-100%,0-20%
+1998,april,Manipur,38,0,38,100,0,April,Apr,white,black,80-100%,0-20%
+1998,april,Meghalaya,39,0,39,100,0,April,Apr,white,black,80-100%,0-20%
+1998,april,Mizoram,21,0,29,72.41379310344827,0,April,Apr,white,black,60-80%,0-20%
+1998,april,Nagaland,114,0,114,100,0,April,Apr,white,black,80-100%,0-20%
+1998,april,Nct Of Delhi,0,0,27,0,0,April,Apr,black,black,0-20%,0-20%
+1998,april,Odisha,477,38,477,100,7.966457023060797,April,Apr,white,black,80-100%,0-20%
+1998,april,Puducherry,8,1,8,100,12.5,April,Apr,white,black,80-100%,0-20%
+1998,april,Punjab,64,0,77,83.11688311688312,0,April,Apr,white,black,80-100%,0-20%
+1998,april,Rajasthan,194,0,244,79.50819672131148,0,April,Apr,white,black,60-80%,0-20%
+1998,april,Sikkim,9,0,9,100,0,April,Apr,white,black,80-100%,0-20%
+1998,april,Tamil Nadu,216,2,216,100,0.9259259259259258,April,Apr,white,black,80-100%,0-20%
+1998,april,Tripura,22,0,40,55.00000000000001,0,April,Apr,black,black,40-60%,0-20%
+1998,april,Uttar Pradesh,49,0,312,15.705128205128204,0,April,Apr,black,black,0-20%,0-20%
+1998,april,Uttarakhand,78,0,78,100,0,April,Apr,white,black,80-100%,0-20%
+1998,april,West Bengal,310,0,344,90.11627906976744,0,April,Apr,white,black,80-100%,0-20%
+1998,august,Andaman Nicobar Islands,9,9,9,100,100,August,Aug,white,white,80-100%,80-100%
+1998,august,Andhra Pradesh,1128,629,1128,100,55.76241134751773,August,Aug,white,black,80-100%,40-60%
+1998,august,Arunachal Pradesh,188,188,188,100,100,August,Aug,white,white,80-100%,80-100%
+1998,august,Assam,184,141,184,100,76.63043478260869,August,Aug,white,white,80-100%,60-80%
+1998,august,Bihar,534,3,534,100,0.5617977528089888,August,Aug,white,black,80-100%,0-20%
+1998,august,Chandigarh,1,0,1,100,0,August,Aug,white,black,80-100%,0-20%
+1998,august,Chhattisgarh,149,5,149,100,3.3557046979865772,August,Aug,white,black,80-100%,0-20%
+1998,august,Dadra Nagar Haveli,1,0,1,100,0,August,Aug,white,black,80-100%,0-20%
+1998,august,Daman Diu,2,0,2,100,0,August,Aug,white,black,80-100%,0-20%
+1998,august,Goa,11,0,11,100,0,August,Aug,white,black,80-100%,0-20%
+1998,august,Gujarat,226,0,226,100,0,August,Aug,white,black,80-100%,0-20%
+1998,august,Haryana,74,1,74,100,1.3513513513513513,August,Aug,white,black,80-100%,0-20%
+1998,august,Himachal Pradesh,117,62,117,100,52.991452991452995,August,Aug,white,black,80-100%,40-60%
+1998,august,Jammu Kashmir,83,4,83,100,4.819277108433735,August,Aug,white,black,80-100%,0-20%
+1998,august,Jharkhand,259,0,259,100,0,August,Aug,white,black,80-100%,0-20%
+1998,august,Karnataka,179,121,179,100,67.59776536312849,August,Aug,white,white,80-100%,60-80%
+1998,august,Kerala,63,12,63,100,19.047619047619047,August,Aug,white,black,80-100%,0-20%
+1998,august,Lakshadweep,9,8,9,100,88.88888888888889,August,Aug,white,white,80-100%,80-100%
+1998,august,Madhya Pradesh,342,26,342,100,7.602339181286549,August,Aug,white,black,80-100%,0-20%
+1998,august,Maharashtra,357,69,357,100,19.327731092436977,August,Aug,white,black,80-100%,0-20%
+1998,august,Manipur,38,38,38,100,100,August,Aug,white,white,80-100%,80-100%
+1998,august,Meghalaya,39,12,39,100,30.76923076923077,August,Aug,white,black,80-100%,20-40%
+1998,august,Mizoram,29,7,29,100,24.137931034482758,August,Aug,white,black,80-100%,20-40%
+1998,august,Nagaland,114,114,114,100,100,August,Aug,white,white,80-100%,80-100%
+1998,august,Nct Of Delhi,27,0,27,100,0,August,Aug,white,black,80-100%,0-20%
+1998,august,Odisha,477,213,477,100,44.65408805031446,August,Aug,white,black,80-100%,40-60%
+1998,august,Puducherry,8,1,8,100,12.5,August,Aug,white,black,80-100%,0-20%
+1998,august,Punjab,77,0,77,100,0,August,Aug,white,black,80-100%,0-20%
+1998,august,Rajasthan,244,0,244,100,0,August,Aug,white,black,80-100%,0-20%
+1998,august,Sikkim,9,9,9,100,100,August,Aug,white,white,80-100%,80-100%
+1998,august,Tamil Nadu,216,8,216,100,3.7037037037037033,August,Aug,white,black,80-100%,0-20%
+1998,august,Tripura,40,6,40,100,15,August,Aug,white,black,80-100%,0-20%
+1998,august,Uttar Pradesh,312,0,312,100,0,August,Aug,white,black,80-100%,0-20%
+1998,august,Uttarakhand,78,28,78,100,35.8974358974359,August,Aug,white,black,80-100%,20-40%
+1998,august,West Bengal,344,113,344,100,32.848837209302324,August,Aug,white,black,80-100%,20-40%
+1998,december,Andaman Nicobar Islands,9,6,9,100,66.66666666666666,December,Dec,white,white,80-100%,60-80%
+1998,december,Andhra Pradesh,1058,0,1128,93.79432624113475,0,December,Dec,white,black,80-100%,0-20%
+1998,december,Arunachal Pradesh,188,20,188,100,10.638297872340425,December,Dec,white,black,80-100%,0-20%
+1998,december,Assam,73,0,184,39.67391304347826,0,December,Dec,black,black,20-40%,0-20%
+1998,december,Bihar,4,0,534,0.7490636704119851,0,December,Dec,black,black,0-20%,0-20%
+1998,december,Chandigarh,0,0,1,0,0,December,Dec,black,black,0-20%,0-20%
+1998,december,Chhattisgarh,148,1,149,99.32885906040269,0.6711409395973155,December,Dec,white,black,80-100%,0-20%
+1998,december,Dadra Nagar Haveli,1,0,1,100,0,December,Dec,white,black,80-100%,0-20%
+1998,december,Daman Diu,1,0,2,50,0,December,Dec,black,black,40-60%,0-20%
+1998,december,Goa,11,0,11,100,0,December,Dec,white,black,80-100%,0-20%
+1998,december,Gujarat,213,0,226,94.24778761061947,0,December,Dec,white,black,80-100%,0-20%
+1998,december,Haryana,0,0,74,0,0,December,Dec,black,black,0-20%,0-20%
+1998,december,Himachal Pradesh,106,2,117,90.5982905982906,1.7094017094017095,December,Dec,white,black,80-100%,0-20%
+1998,december,Jammu Kashmir,77,6,83,92.7710843373494,7.228915662650602,December,Dec,white,black,80-100%,0-20%
+1998,december,Jharkhand,78,0,259,30.115830115830118,0,December,Dec,black,black,20-40%,0-20%
+1998,december,Karnataka,178,8,179,99.4413407821229,4.4692737430167595,December,Dec,white,black,80-100%,0-20%
+1998,december,Kerala,63,3,63,100,4.761904761904762,December,Dec,white,black,80-100%,0-20%
+1998,december,Lakshadweep,4,0,9,44.44444444444444,0,December,Dec,black,black,40-60%,0-20%
+1998,december,Madhya Pradesh,249,0,342,72.80701754385966,0,December,Dec,white,black,60-80%,0-20%
+1998,december,Maharashtra,339,0,357,94.9579831932773,0,December,Dec,white,black,80-100%,0-20%
+1998,december,Manipur,38,0,38,100,0,December,Dec,white,black,80-100%,0-20%
+1998,december,Meghalaya,34,3,39,87.17948717948718,7.6923076923076925,December,Dec,white,black,80-100%,0-20%
+1998,december,Mizoram,27,0,29,93.10344827586206,0,December,Dec,white,black,80-100%,0-20%
+1998,december,Nagaland,106,0,114,92.98245614035088,0,December,Dec,white,black,80-100%,0-20%
+1998,december,Nct Of Delhi,0,0,27,0,0,December,Dec,black,black,0-20%,0-20%
+1998,december,Odisha,393,0,477,82.38993710691824,0,December,Dec,white,black,80-100%,0-20%
+1998,december,Puducherry,8,0,8,100,0,December,Dec,white,black,80-100%,0-20%
+1998,december,Punjab,1,0,77,1.2987012987012987,0,December,Dec,black,black,0-20%,0-20%
+1998,december,Rajasthan,111,0,244,45.49180327868852,0,December,Dec,black,black,40-60%,0-20%
+1998,december,Sikkim,9,0,9,100,0,December,Dec,white,black,80-100%,0-20%
+1998,december,Tamil Nadu,216,2,216,100,0.9259259259259258,December,Dec,white,black,80-100%,0-20%
+1998,december,Tripura,12,0,40,30,0,December,Dec,black,black,20-40%,0-20%
+1998,december,Uttar Pradesh,5,0,312,1.6025641025641024,0,December,Dec,black,black,0-20%,0-20%
+1998,december,Uttarakhand,68,2,78,87.17948717948718,2.564102564102564,December,Dec,white,black,80-100%,0-20%
+1998,december,West Bengal,5,0,344,1.4534883720930232,0,December,Dec,black,black,0-20%,0-20%
+1998,february,Andaman Nicobar Islands,9,0,9,100,0,February,Feb,white,black,80-100%,0-20%
+1998,february,Andhra Pradesh,1128,2,1128,100,0.1773049645390071,February,Feb,white,black,80-100%,0-20%
+1998,february,Arunachal Pradesh,188,76,188,100,40.42553191489361,February,Feb,white,black,80-100%,40-60%
+1998,february,Assam,113,0,184,61.41304347826087,0,February,Feb,white,black,60-80%,0-20%
+1998,february,Bihar,2,0,534,0.37453183520599254,0,February,Feb,black,black,0-20%,0-20%
+1998,february,Chandigarh,1,0,1,100,0,February,Feb,white,black,80-100%,0-20%
+1998,february,Chhattisgarh,139,0,149,93.28859060402685,0,February,Feb,white,black,80-100%,0-20%
+1998,february,Dadra Nagar Haveli,0,0,1,0,0,February,Feb,black,black,0-20%,0-20%
+1998,february,Daman Diu,1,0,2,50,0,February,Feb,black,black,40-60%,0-20%
+1998,february,Goa,11,0,11,100,0,February,Feb,white,black,80-100%,0-20%
+1998,february,Gujarat,95,0,226,42.0353982300885,0,February,Feb,black,black,40-60%,0-20%
+1998,february,Haryana,47,0,74,63.51351351351351,0,February,Feb,white,black,60-80%,0-20%
+1998,february,Himachal Pradesh,117,2,117,100,1.7094017094017095,February,Feb,white,black,80-100%,0-20%
+1998,february,Jammu Kashmir,83,4,83,100,4.819277108433735,February,Feb,white,black,80-100%,0-20%
+1998,february,Jharkhand,137,0,259,52.8957528957529,0,February,Feb,black,black,40-60%,0-20%
+1998,february,Karnataka,179,20,179,100,11.1731843575419,February,Feb,white,black,80-100%,0-20%
+1998,february,Kerala,63,3,63,100,4.761904761904762,February,Feb,white,black,80-100%,0-20%
+1998,february,Lakshadweep,1,0,9,11.11111111111111,0,February,Feb,black,black,0-20%,0-20%
+1998,february,Madhya Pradesh,283,0,342,82.7485380116959,0,February,Feb,white,black,80-100%,0-20%
+1998,february,Maharashtra,313,0,357,87.6750700280112,0,February,Feb,white,black,80-100%,0-20%
+1998,february,Manipur,38,0,38,100,0,February,Feb,white,black,80-100%,0-20%
+1998,february,Meghalaya,22,0,39,56.41025641025641,0,February,Feb,black,black,40-60%,0-20%
+1998,february,Mizoram,29,0,29,100,0,February,Feb,white,black,80-100%,0-20%
+1998,february,Nagaland,112,0,114,98.24561403508771,0,February,Feb,white,black,80-100%,0-20%
+1998,february,Nct Of Delhi,0,0,27,0,0,February,Feb,black,black,0-20%,0-20%
+1998,february,Odisha,405,0,477,84.90566037735849,0,February,Feb,white,black,80-100%,0-20%
+1998,february,Puducherry,8,0,8,100,0,February,Feb,white,black,80-100%,0-20%
+1998,february,Punjab,77,0,77,100,0,February,Feb,white,black,80-100%,0-20%
+1998,february,Rajasthan,147,0,244,60.245901639344254,0,February,Feb,white,black,60-80%,0-20%
+1998,february,Sikkim,2,0,9,22.22222222222222,0,February,Feb,black,black,20-40%,0-20%
+1998,february,Tamil Nadu,216,1,216,100,0.4629629629629629,February,Feb,white,black,80-100%,0-20%
+1998,february,Tripura,4,0,40,10,0,February,Feb,black,black,0-20%,0-20%
+1998,february,Uttar Pradesh,10,0,312,3.205128205128205,0,February,Feb,black,black,0-20%,0-20%
+1998,february,Uttarakhand,66,0,78,84.61538461538461,0,February,Feb,white,black,80-100%,0-20%
+1998,february,West Bengal,28,0,344,8.13953488372093,0,February,Feb,black,black,0-20%,0-20%
+1998,january,Andaman Nicobar Islands,9,0,9,100,0,January,Jan,white,black,80-100%,0-20%
+1998,january,Andhra Pradesh,1128,0,1128,100,0,January,Jan,white,black,80-100%,0-20%
+1998,january,Arunachal Pradesh,182,84,188,96.80851063829788,44.680851063829785,January,Jan,white,black,80-100%,40-60%
+1998,january,Assam,58,0,184,31.521739130434785,0,January,Jan,black,black,20-40%,0-20%
+1998,january,Bihar,1,0,534,0.18726591760299627,0,January,Jan,black,black,0-20%,0-20%
+1998,january,Chandigarh,0,0,1,0,0,January,Jan,black,black,0-20%,0-20%
+1998,january,Chhattisgarh,138,0,149,92.61744966442953,0,January,Jan,white,black,80-100%,0-20%
+1998,january,Dadra Nagar Haveli,0,0,1,0,0,January,Jan,black,black,0-20%,0-20%
+1998,january,Daman Diu,0,0,2,0,0,January,Jan,black,black,0-20%,0-20%
+1998,january,Goa,11,0,11,100,0,January,Jan,white,black,80-100%,0-20%
+1998,january,Gujarat,89,0,226,39.38053097345133,0,January,Jan,black,black,20-40%,0-20%
+1998,january,Haryana,2,0,74,2.7027027027027026,0,January,Jan,black,black,0-20%,0-20%
+1998,january,Himachal Pradesh,111,3,117,94.87179487179486,2.564102564102564,January,Jan,white,black,80-100%,0-20%
+1998,january,Jammu Kashmir,83,6,83,100,7.228915662650602,January,Jan,white,black,80-100%,0-20%
+1998,january,Jharkhand,94,0,259,36.293436293436294,0,January,Jan,black,black,20-40%,0-20%
+1998,january,Karnataka,179,0,179,100,0,January,Jan,white,black,80-100%,0-20%
+1998,january,Kerala,63,0,63,100,0,January,Jan,white,black,80-100%,0-20%
+1998,january,Lakshadweep,2,0,9,22.22222222222222,0,January,Jan,black,black,20-40%,0-20%
+1998,january,Madhya Pradesh,171,0,342,50,0,January,Jan,black,black,40-60%,0-20%
+1998,january,Maharashtra,207,0,357,57.98319327731093,0,January,Jan,black,black,40-60%,0-20%
+1998,january,Manipur,38,0,38,100,0,January,Jan,white,black,80-100%,0-20%
+1998,january,Meghalaya,19,0,39,48.717948717948715,0,January,Jan,black,black,40-60%,0-20%
+1998,january,Mizoram,29,0,29,100,0,January,Jan,white,black,80-100%,0-20%
+1998,january,Nagaland,67,0,114,58.77192982456141,0,January,Jan,black,black,40-60%,0-20%
+1998,january,Nct Of Delhi,0,0,27,0,0,January,Jan,black,black,0-20%,0-20%
+1998,january,Odisha,390,0,477,81.76100628930818,0,January,Jan,white,black,80-100%,0-20%
+1998,january,Puducherry,8,0,8,100,0,January,Jan,white,black,80-100%,0-20%
+1998,january,Punjab,4,0,77,5.194805194805195,0,January,Jan,black,black,0-20%,0-20%
+1998,january,Rajasthan,30,0,244,12.295081967213115,0,January,Jan,black,black,0-20%,0-20%
+1998,january,Sikkim,0,0,9,0,0,January,Jan,black,black,0-20%,0-20%
+1998,january,Tamil Nadu,216,0,216,100,0,January,Jan,white,black,80-100%,0-20%
+1998,january,Tripura,1,0,40,2.5,0,January,Jan,black,black,0-20%,0-20%
+1998,january,Uttar Pradesh,0,0,312,0,0,January,Jan,black,black,0-20%,0-20%
+1998,january,Uttarakhand,66,0,78,84.61538461538461,0,January,Jan,white,black,80-100%,0-20%
+1998,january,West Bengal,3,0,344,0.872093023255814,0,January,Jan,black,black,0-20%,0-20%
+1998,july,Andaman Nicobar Islands,9,9,9,100,100,July,Jul,white,white,80-100%,80-100%
+1998,july,Andhra Pradesh,1128,474,1128,100,42.02127659574468,July,Jul,white,black,80-100%,40-60%
+1998,july,Arunachal Pradesh,188,188,188,100,100,July,Jul,white,white,80-100%,80-100%
+1998,july,Assam,184,137,184,100,74.45652173913044,July,Jul,white,white,80-100%,60-80%
+1998,july,Bihar,534,1,534,100,0.18726591760299627,July,Jul,white,black,80-100%,0-20%
+1998,july,Chandigarh,1,0,1,100,0,July,Jul,white,black,80-100%,0-20%
+1998,july,Chhattisgarh,149,0,149,100,0,July,Jul,white,black,80-100%,0-20%
+1998,july,Dadra Nagar Haveli,1,0,1,100,0,July,Jul,white,black,80-100%,0-20%
+1998,july,Daman Diu,2,0,2,100,0,July,Jul,white,black,80-100%,0-20%
+1998,july,Goa,11,0,11,100,0,July,Jul,white,black,80-100%,0-20%
+1998,july,Gujarat,225,0,226,99.5575221238938,0,July,Jul,white,black,80-100%,0-20%
+1998,july,Haryana,74,0,74,100,0,July,Jul,white,black,80-100%,0-20%
+1998,july,Himachal Pradesh,117,17,117,100,14.529914529914532,July,Jul,white,black,80-100%,0-20%
+1998,july,Jammu Kashmir,83,5,83,100,6.024096385542169,July,Jul,white,black,80-100%,0-20%
+1998,july,Jharkhand,259,0,259,100,0,July,Jul,white,black,80-100%,0-20%
+1998,july,Karnataka,179,118,179,100,65.92178770949721,July,Jul,white,white,80-100%,60-80%
+1998,july,Kerala,63,21,63,100,33.33333333333333,July,Jul,white,black,80-100%,20-40%
+1998,july,Lakshadweep,9,8,9,100,88.88888888888889,July,Jul,white,white,80-100%,80-100%
+1998,july,Madhya Pradesh,342,13,342,100,3.8011695906432745,July,Jul,white,black,80-100%,0-20%
+1998,july,Maharashtra,357,70,357,100,19.607843137254903,July,Jul,white,black,80-100%,0-20%
+1998,july,Manipur,38,38,38,100,100,July,Jul,white,white,80-100%,80-100%
+1998,july,Meghalaya,39,11,39,100,28.205128205128204,July,Jul,white,black,80-100%,20-40%
+1998,july,Mizoram,29,9,29,100,31.03448275862069,July,Jul,white,black,80-100%,20-40%
+1998,july,Nagaland,114,114,114,100,100,July,Jul,white,white,80-100%,80-100%
+1998,july,Nct Of Delhi,27,0,27,100,0,July,Jul,white,black,80-100%,0-20%
+1998,july,Odisha,477,164,477,100,34.38155136268344,July,Jul,white,black,80-100%,20-40%
+1998,july,Puducherry,8,1,8,100,12.5,July,Jul,white,black,80-100%,0-20%
+1998,july,Punjab,77,0,77,100,0,July,Jul,white,black,80-100%,0-20%
+1998,july,Rajasthan,244,0,244,100,0,July,Jul,white,black,80-100%,0-20%
+1998,july,Sikkim,9,9,9,100,100,July,Jul,white,white,80-100%,80-100%
+1998,july,Tamil Nadu,216,34,216,100,15.74074074074074,July,Jul,white,black,80-100%,0-20%
+1998,july,Tripura,40,10,40,100,25,July,Jul,white,black,80-100%,20-40%
+1998,july,Uttar Pradesh,312,0,312,100,0,July,Jul,white,black,80-100%,0-20%
+1998,july,Uttarakhand,78,33,78,100,42.30769230769231,July,Jul,white,black,80-100%,40-60%
+1998,july,West Bengal,344,60,344,100,17.441860465116278,July,Jul,white,black,80-100%,0-20%
+1998,june,Andaman Nicobar Islands,9,4,9,100,44.44444444444444,June,Jun,white,black,80-100%,40-60%
+1998,june,Andhra Pradesh,1128,80,1128,100,7.092198581560284,June,Jun,white,black,80-100%,0-20%
+1998,june,Arunachal Pradesh,188,188,188,100,100,June,Jun,white,white,80-100%,80-100%
+1998,june,Assam,184,172,184,100,93.47826086956522,June,Jun,white,white,80-100%,80-100%
+1998,june,Bihar,534,0,534,100,0,June,Jun,white,black,80-100%,0-20%
+1998,june,Chandigarh,1,0,1,100,0,June,Jun,white,black,80-100%,0-20%
+1998,june,Chhattisgarh,149,0,149,100,0,June,Jun,white,black,80-100%,0-20%
+1998,june,Dadra Nagar Haveli,1,0,1,100,0,June,Jun,white,black,80-100%,0-20%
+1998,june,Daman Diu,2,0,2,100,0,June,Jun,white,black,80-100%,0-20%
+1998,june,Goa,11,0,11,100,0,June,Jun,white,black,80-100%,0-20%
+1998,june,Gujarat,226,0,226,100,0,June,Jun,white,black,80-100%,0-20%
+1998,june,Haryana,66,0,74,89.1891891891892,0,June,Jun,white,black,80-100%,0-20%
+1998,june,Himachal Pradesh,117,0,117,100,0,June,Jun,white,black,80-100%,0-20%
+1998,june,Jammu Kashmir,83,5,83,100,6.024096385542169,June,Jun,white,black,80-100%,0-20%
+1998,june,Jharkhand,255,0,259,98.45559845559846,0,June,Jun,white,black,80-100%,0-20%
+1998,june,Karnataka,179,74,179,100,41.340782122905026,June,Jun,white,black,80-100%,40-60%
+1998,june,Kerala,63,60,63,100,95.23809523809523,June,Jun,white,white,80-100%,80-100%
+1998,june,Lakshadweep,9,9,9,100,100,June,Jun,white,white,80-100%,80-100%
+1998,june,Madhya Pradesh,342,0,342,100,0,June,Jun,white,black,80-100%,0-20%
+1998,june,Maharashtra,357,0,357,100,0,June,Jun,white,black,80-100%,0-20%
+1998,june,Manipur,38,38,38,100,100,June,Jun,white,white,80-100%,80-100%
+1998,june,Meghalaya,39,10,39,100,25.64102564102564,June,Jun,white,black,80-100%,20-40%
+1998,june,Mizoram,29,14,29,100,48.275862068965516,June,Jun,white,black,80-100%,40-60%
+1998,june,Nagaland,114,114,114,100,100,June,Jun,white,white,80-100%,80-100%
+1998,june,Nct Of Delhi,27,0,27,100,0,June,Jun,white,black,80-100%,0-20%
+1998,june,Odisha,477,54,477,100,11.320754716981133,June,Jun,white,black,80-100%,0-20%
+1998,june,Puducherry,8,2,8,100,25,June,Jun,white,black,80-100%,20-40%
+1998,june,Punjab,77,0,77,100,0,June,Jun,white,black,80-100%,0-20%
+1998,june,Rajasthan,244,0,244,100,0,June,Jun,white,black,80-100%,0-20%
+1998,june,Sikkim,9,9,9,100,100,June,Jun,white,white,80-100%,80-100%
+1998,june,Tamil Nadu,216,23,216,100,10.648148148148149,June,Jun,white,black,80-100%,0-20%
+1998,june,Tripura,40,3,40,100,7.5,June,Jun,white,black,80-100%,0-20%
+1998,june,Uttar Pradesh,298,0,312,95.51282051282051,0,June,Jun,white,black,80-100%,0-20%
+1998,june,Uttarakhand,78,0,78,100,0,June,Jun,white,black,80-100%,0-20%
+1998,june,West Bengal,344,74,344,100,21.511627906976745,June,Jun,white,black,80-100%,20-40%
+1998,march,Andaman Nicobar Islands,9,1,9,100,11.11111111111111,March,Mar,white,black,80-100%,0-20%
+1998,march,Andhra Pradesh,1128,19,1128,100,1.6843971631205674,March,Mar,white,black,80-100%,0-20%
+1998,march,Arunachal Pradesh,188,75,188,100,39.8936170212766,March,Mar,white,black,80-100%,20-40%
+1998,march,Assam,134,0,184,72.82608695652173,0,March,Mar,white,black,60-80%,0-20%
+1998,march,Bihar,63,0,534,11.797752808988763,0,March,Mar,black,black,0-20%,0-20%
+1998,march,Chandigarh,1,0,1,100,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Chhattisgarh,149,0,149,100,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Dadra Nagar Haveli,1,0,1,100,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Daman Diu,2,0,2,100,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Goa,11,0,11,100,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Gujarat,182,0,226,80.53097345132744,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Haryana,74,0,74,100,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Himachal Pradesh,117,3,117,100,2.564102564102564,March,Mar,white,black,80-100%,0-20%
+1998,march,Jammu Kashmir,83,6,83,100,7.228915662650602,March,Mar,white,black,80-100%,0-20%
+1998,march,Jharkhand,240,0,259,92.66409266409266,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Karnataka,179,15,179,100,8.379888268156424,March,Mar,white,black,80-100%,0-20%
+1998,march,Kerala,63,3,63,100,4.761904761904762,March,Mar,white,black,80-100%,0-20%
+1998,march,Lakshadweep,9,0,9,100,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Madhya Pradesh,323,0,342,94.44444444444444,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Maharashtra,347,0,357,97.19887955182072,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Manipur,38,0,38,100,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Meghalaya,32,2,39,82.05128205128204,5.128205128205128,March,Mar,white,black,80-100%,0-20%
+1998,march,Mizoram,25,0,29,86.20689655172413,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Nagaland,85,0,114,74.56140350877193,0,March,Mar,white,black,60-80%,0-20%
+1998,march,Nct Of Delhi,0,0,27,0,0,March,Mar,black,black,0-20%,0-20%
+1998,march,Odisha,471,2,477,98.74213836477988,0.41928721174004197,March,Mar,white,black,80-100%,0-20%
+1998,march,Puducherry,8,0,8,100,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Punjab,77,0,77,100,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Rajasthan,231,0,244,94.67213114754098,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Sikkim,9,0,9,100,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Tamil Nadu,216,0,216,100,0,March,Mar,white,black,80-100%,0-20%
+1998,march,Tripura,19,0,40,47.5,0,March,Mar,black,black,40-60%,0-20%
+1998,march,Uttar Pradesh,134,0,312,42.94871794871795,0,March,Mar,black,black,40-60%,0-20%
+1998,march,Uttarakhand,78,0,78,100,0,March,Mar,white,black,80-100%,0-20%
+1998,march,West Bengal,259,0,344,75.29069767441861,0,March,Mar,white,black,60-80%,0-20%
+1998,may,Andaman Nicobar Islands,9,1,9,100,11.11111111111111,May,May,white,black,80-100%,0-20%
+1998,may,Andhra Pradesh,1128,267,1128,100,23.670212765957448,May,May,white,black,80-100%,20-40%
+1998,may,Arunachal Pradesh,188,156,188,100,82.97872340425532,May,May,white,white,80-100%,80-100%
+1998,may,Assam,184,9,184,100,4.891304347826087,May,May,white,black,80-100%,0-20%
+1998,may,Bihar,214,0,534,40.074906367041194,0,May,May,black,black,40-60%,0-20%
+1998,may,Chandigarh,1,0,1,100,0,May,May,white,black,80-100%,0-20%
+1998,may,Chhattisgarh,149,38,149,100,25.503355704697988,May,May,white,black,80-100%,20-40%
+1998,may,Dadra Nagar Haveli,1,0,1,100,0,May,May,white,black,80-100%,0-20%
+1998,may,Daman Diu,2,0,2,100,0,May,May,white,black,80-100%,0-20%
+1998,may,Goa,11,0,11,100,0,May,May,white,black,80-100%,0-20%
+1998,may,Gujarat,191,0,226,84.51327433628319,0,May,May,white,black,80-100%,0-20%
+1998,may,Haryana,8,0,74,10.81081081081081,0,May,May,black,black,0-20%,0-20%
+1998,may,Himachal Pradesh,117,0,117,100,0,May,May,white,black,80-100%,0-20%
+1998,may,Jammu Kashmir,83,16,83,100,19.27710843373494,May,May,white,black,80-100%,0-20%
+1998,may,Jharkhand,254,0,259,98.06949806949807,0,May,May,white,black,80-100%,0-20%
+1998,may,Karnataka,179,31,179,100,17.318435754189945,May,May,white,black,80-100%,0-20%
+1998,may,Kerala,63,7,63,100,11.11111111111111,May,May,white,black,80-100%,0-20%
+1998,may,Lakshadweep,9,0,9,100,0,May,May,white,black,80-100%,0-20%
+1998,may,Madhya Pradesh,320,34,342,93.56725146198829,9.941520467836257,May,May,white,black,80-100%,0-20%
+1998,may,Maharashtra,357,2,357,100,0.5602240896358543,May,May,white,black,80-100%,0-20%
+1998,may,Manipur,38,0,38,100,0,May,May,white,black,80-100%,0-20%
+1998,may,Meghalaya,39,0,39,100,0,May,May,white,black,80-100%,0-20%
+1998,may,Mizoram,29,3,29,100,10.344827586206897,May,May,white,black,80-100%,0-20%
+1998,may,Nagaland,114,0,114,100,0,May,May,white,black,80-100%,0-20%
+1998,may,Nct Of Delhi,0,0,27,0,0,May,May,black,black,0-20%,0-20%
+1998,may,Odisha,477,139,477,100,29.140461215932913,May,May,white,black,80-100%,20-40%
+1998,may,Puducherry,8,0,8,100,0,May,May,white,black,80-100%,0-20%
+1998,may,Punjab,20,0,77,25.97402597402597,0,May,May,black,black,20-40%,0-20%
+1998,may,Rajasthan,168,0,244,68.85245901639344,0,May,May,white,black,60-80%,0-20%
+1998,may,Sikkim,9,0,9,100,0,May,May,white,black,80-100%,0-20%
+1998,may,Tamil Nadu,216,6,216,100,2.7777777777777777,May,May,white,black,80-100%,0-20%
+1998,may,Tripura,40,0,40,100,0,May,May,white,black,80-100%,0-20%
+1998,may,Uttar Pradesh,36,0,312,11.538461538461538,0,May,May,black,black,0-20%,0-20%
+1998,may,Uttarakhand,76,0,78,97.43589743589743,0,May,May,white,black,80-100%,0-20%
+1998,may,West Bengal,344,36,344,100,10.465116279069768,May,May,white,black,80-100%,0-20%
+1998,november,Andaman Nicobar Islands,9,4,9,100,44.44444444444444,November,Nov,white,black,80-100%,40-60%
+1998,november,Andhra Pradesh,1128,20,1128,100,1.773049645390071,November,Nov,white,black,80-100%,0-20%
+1998,november,Arunachal Pradesh,188,121,188,100,64.36170212765957,November,Nov,white,white,80-100%,60-80%
+1998,november,Assam,154,0,184,83.69565217391305,0,November,Nov,white,black,80-100%,0-20%
+1998,november,Bihar,2,0,534,0.37453183520599254,0,November,Nov,black,black,0-20%,0-20%
+1998,november,Chandigarh,0,0,1,0,0,November,Nov,black,black,0-20%,0-20%
+1998,november,Chhattisgarh,148,1,149,99.32885906040269,0.6711409395973155,November,Nov,white,black,80-100%,0-20%
+1998,november,Dadra Nagar Haveli,1,0,1,100,0,November,Nov,white,black,80-100%,0-20%
+1998,november,Daman Diu,2,0,2,100,0,November,Nov,white,black,80-100%,0-20%
+1998,november,Goa,11,0,11,100,0,November,Nov,white,black,80-100%,0-20%
+1998,november,Gujarat,213,0,226,94.24778761061947,0,November,Nov,white,black,80-100%,0-20%
+1998,november,Haryana,2,0,74,2.7027027027027026,0,November,Nov,black,black,0-20%,0-20%
+1998,november,Himachal Pradesh,115,3,117,98.29059829059828,2.564102564102564,November,Nov,white,black,80-100%,0-20%
+1998,november,Jammu Kashmir,80,6,83,96.3855421686747,7.228915662650602,November,Nov,white,black,80-100%,0-20%
+1998,november,Jharkhand,142,0,259,54.826254826254825,0,November,Nov,black,black,40-60%,0-20%
+1998,november,Karnataka,179,49,179,100,27.37430167597765,November,Nov,white,black,80-100%,20-40%
+1998,november,Kerala,63,14,63,100,22.22222222222222,November,Nov,white,black,80-100%,20-40%
+1998,november,Lakshadweep,5,0,9,55.55555555555556,0,November,Nov,black,black,40-60%,0-20%
+1998,november,Madhya Pradesh,252,0,342,73.68421052631578,0,November,Nov,white,black,60-80%,0-20%
+1998,november,Maharashtra,354,15,357,99.15966386554622,4.201680672268908,November,Nov,white,black,80-100%,0-20%
+1998,november,Manipur,38,0,38,100,0,November,Nov,white,black,80-100%,0-20%
+1998,november,Meghalaya,38,0,39,97.43589743589743,0,November,Nov,white,black,80-100%,0-20%
+1998,november,Mizoram,23,0,29,79.3103448275862,0,November,Nov,white,black,60-80%,0-20%
+1998,november,Nagaland,114,0,114,100,0,November,Nov,white,black,80-100%,0-20%
+1998,november,Nct Of Delhi,0,0,27,0,0,November,Nov,black,black,0-20%,0-20%
+1998,november,Odisha,460,6,477,96.43605870020964,1.257861635220126,November,Nov,white,black,80-100%,0-20%
+1998,november,Puducherry,8,0,8,100,0,November,Nov,white,black,80-100%,0-20%
+1998,november,Punjab,2,0,77,2.5974025974025974,0,November,Nov,black,black,0-20%,0-20%
+1998,november,Rajasthan,64,0,244,26.229508196721312,0,November,Nov,black,black,20-40%,0-20%
+1998,november,Sikkim,9,1,9,100,11.11111111111111,November,Nov,white,black,80-100%,0-20%
+1998,november,Tamil Nadu,216,4,216,100,1.8518518518518516,November,Nov,white,black,80-100%,0-20%
+1998,november,Tripura,6,0,40,15,0,November,Nov,black,black,0-20%,0-20%
+1998,november,Uttar Pradesh,2,0,312,0.641025641025641,0,November,Nov,black,black,0-20%,0-20%
+1998,november,Uttarakhand,74,5,78,94.87179487179486,6.41025641025641,November,Nov,white,black,80-100%,0-20%
+1998,november,West Bengal,119,0,344,34.593023255813954,0,November,Nov,black,black,20-40%,0-20%
+1998,october,Andaman Nicobar Islands,9,9,9,100,100,October,Oct,white,white,80-100%,80-100%
+1998,october,Andhra Pradesh,1128,76,1128,100,6.73758865248227,October,Oct,white,black,80-100%,0-20%
+1998,october,Arunachal Pradesh,188,181,188,100,96.27659574468085,October,Oct,white,white,80-100%,80-100%
+1998,october,Assam,180,21,184,97.82608695652173,11.41304347826087,October,Oct,white,black,80-100%,0-20%
+1998,october,Bihar,307,0,534,57.490636704119844,0,October,Oct,black,black,40-60%,0-20%
+1998,october,Chandigarh,1,0,1,100,0,October,Oct,white,black,80-100%,0-20%
+1998,october,Chhattisgarh,149,0,149,100,0,October,Oct,white,black,80-100%,0-20%
+1998,october,Dadra Nagar Haveli,1,0,1,100,0,October,Oct,white,black,80-100%,0-20%
+1998,october,Daman Diu,2,0,2,100,0,October,Oct,white,black,80-100%,0-20%
+1998,october,Goa,11,0,11,100,0,October,Oct,white,black,80-100%,0-20%
+1998,october,Gujarat,226,0,226,100,0,October,Oct,white,black,80-100%,0-20%
+1998,october,Haryana,21,0,74,28.37837837837838,0,October,Oct,black,black,20-40%,0-20%
+1998,october,Himachal Pradesh,117,3,117,100,2.564102564102564,October,Oct,white,black,80-100%,0-20%
+1998,october,Jammu Kashmir,83,7,83,100,8.433734939759036,October,Oct,white,black,80-100%,0-20%
+1998,october,Jharkhand,256,0,259,98.84169884169884,0,October,Oct,white,black,80-100%,0-20%
+1998,october,Karnataka,179,85,179,100,47.486033519553075,October,Oct,white,black,80-100%,40-60%
+1998,october,Kerala,63,50,63,100,79.36507936507937,October,Oct,white,white,80-100%,60-80%
+1998,october,Lakshadweep,9,8,9,100,88.88888888888889,October,Oct,white,white,80-100%,80-100%
+1998,october,Madhya Pradesh,303,0,342,88.59649122807018,0,October,Oct,white,black,80-100%,0-20%
+1998,october,Maharashtra,357,1,357,100,0.2801120448179272,October,Oct,white,black,80-100%,0-20%
+1998,october,Manipur,38,0,38,100,0,October,Oct,white,black,80-100%,0-20%
+1998,october,Meghalaya,39,0,39,100,0,October,Oct,white,black,80-100%,0-20%
+1998,october,Mizoram,29,0,29,100,0,October,Oct,white,black,80-100%,0-20%
+1998,october,Nagaland,114,0,114,100,0,October,Oct,white,black,80-100%,0-20%
+1998,october,Nct Of Delhi,0,0,27,0,0,October,Oct,black,black,0-20%,0-20%
+1998,october,Odisha,477,114,477,100,23.89937106918239,October,Oct,white,black,80-100%,20-40%
+1998,october,Puducherry,8,1,8,100,12.5,October,Oct,white,black,80-100%,0-20%
+1998,october,Punjab,31,0,77,40.25974025974026,0,October,Oct,black,black,40-60%,0-20%
+1998,october,Rajasthan,153,0,244,62.704918032786885,0,October,Oct,white,black,60-80%,0-20%
+1998,october,Sikkim,9,2,9,100,22.22222222222222,October,Oct,white,black,80-100%,20-40%
+1998,october,Tamil Nadu,216,13,216,100,6.018518518518518,October,Oct,white,black,80-100%,0-20%
+1998,october,Tripura,22,0,40,55.00000000000001,0,October,Oct,black,black,40-60%,0-20%
+1998,october,Uttar Pradesh,37,0,312,11.858974358974358,0,October,Oct,black,black,0-20%,0-20%
+1998,october,Uttarakhand,76,1,78,97.43589743589743,1.282051282051282,October,Oct,white,black,80-100%,0-20%
+1998,october,West Bengal,344,0,344,100,0,October,Oct,white,black,80-100%,0-20%
+1998,september,Andaman Nicobar Islands,9,9,9,100,100,September,Sep,white,white,80-100%,80-100%
+1998,september,Andhra Pradesh,1128,168,1128,100,14.893617021276595,September,Sep,white,black,80-100%,0-20%
+1998,september,Arunachal Pradesh,188,181,188,100,96.27659574468085,September,Sep,white,white,80-100%,80-100%
+1998,september,Assam,184,92,184,100,50,September,Sep,white,black,80-100%,40-60%
+1998,september,Bihar,534,1,534,100,0.18726591760299627,September,Sep,white,black,80-100%,0-20%
+1998,september,Chandigarh,1,0,1,100,0,September,Sep,white,black,80-100%,0-20%
+1998,september,Chhattisgarh,149,0,149,100,0,September,Sep,white,black,80-100%,0-20%
+1998,september,Dadra Nagar Haveli,1,0,1,100,0,September,Sep,white,black,80-100%,0-20%
+1998,september,Daman Diu,2,0,2,100,0,September,Sep,white,black,80-100%,0-20%
+1998,september,Goa,11,0,11,100,0,September,Sep,white,black,80-100%,0-20%
+1998,september,Gujarat,226,0,226,100,0,September,Sep,white,black,80-100%,0-20%
+1998,september,Haryana,74,1,74,100,1.3513513513513513,September,Sep,white,black,80-100%,0-20%
+1998,september,Himachal Pradesh,117,24,117,100,20.51282051282051,September,Sep,white,black,80-100%,20-40%
+1998,september,Jammu Kashmir,83,4,83,100,4.819277108433735,September,Sep,white,black,80-100%,0-20%
