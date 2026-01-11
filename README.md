@@ -34,9 +34,26 @@ Voronoi and Visual Capitalist Creator’s Program.
 
 ------------------------------------------------------------------------
 
+## **Project 10:** Why India’s pollution looks seasonal — why it isn’t — and what can be done about it
+
+- Link to Published Story: \[coming soon\]
+
+- Link to all resources (raw data, final data for plot, high res plot
+  images, etc):
+  [Link](https://github.com/AarshBatra/visual.capitalist.articles/tree/main/10.ind.subdist.aq.mth.comply.by.state.1998.2024)
+
+## **Project 9: India’s Air Quality Reality - 27 Years in One Graph**
+
+- Link to Published Story: \[coming soon\]
+
+- Link to all resources (raw data, final data for plot, high res plot
+  images, etc):
+  [Link](https://github.com/AarshBatra/visual.capitalist.articles/tree/main/9.ind.subdist.aq.mth.compl.1998.2024)
+
 ## **Project 8: Air Quality Standards National Coverage for Criterial Pollutants Across the World**
 
-- Link to Published Story: \[coming\]
+- Link to Published Story:
+  [Link](https://www.voronoiapp.com/politics/Air-Quality-Standards-National-Coverage-for-Criteria-Pollutants-Across-the-World-6354)
 
 - Link to raw WHO/Swiss TPH compiled national air quality standards
   database:
